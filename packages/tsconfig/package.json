@@ -1,0 +1,47 @@
+{
+  "name": "@mr-hope/tsconfig",
+  "version": "0.0.4",
+  "description": "Modern and strict tsconfig presets for Bundler, Node.js, and Web environments.",
+  "keywords": [
+    "bundler",
+    "config",
+    "node20",
+    "preset",
+    "tsconfig",
+    "typescript",
+    "vite"
+  ],
+  "license": "MIT",
+  "author": "Mr.Hope",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mister-Hope/configs.git",
+    "directory": "packages/tsconfig"
+  },
+  "files": [
+    "base.json",
+    "bundler.json",
+    "check.json",
+    "dts.json",
+    "node.json",
+    "web.json"
+  ],
+  "type": "module",
+  "exports": {
+    "./base.json": "./base.json",
+    "./bundler.json": "./bundler.json",
+    "./check.json": "./check.json",
+    "./dts.json": "./dts.json",
+    "./node.json": "./node.json",
+    "./web.json": "./web.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.4.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

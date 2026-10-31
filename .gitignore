@@ -1,0 +1,17 @@
+# Node modules
+**/node_modules/**
+
+# Dist files
+**/dist/**
+
+# Test coverage
+coverage/
+
+# npm config file
+.npmrc
+
+# Logs
+*.log
+
+# macOS system files
+.DS_Store

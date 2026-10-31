@@ -1,0 +1,62 @@
+{
+  "name": "@mr-hope/verify-commit-message",
+  "version": "0.1.1",
+  "description": "Verify conventional commit messages with actionable, agent-friendly error reports.",
+  "keywords": [
+    "commit",
+    "commit-msg",
+    "commitlint",
+    "conventional-commits",
+    "git",
+    "husky",
+    "verify"
+  ],
+  "homepage": "https://github.com/Mister-Hope/configs/tree/main/packages/verify-commit-message",
+  "bugs": {
+    "url": "https://github.com/Mister-Hope/configs/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mister-Hope",
+    "email": "mister-hope@outlook.com",
+    "url": "https://mister-hope.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mister-Hope/configs.git",
+    "directory": "packages/verify-commit-message"
+  },
+  "bin": {
+    "verify-commit-message": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "clean": "rimraf ./dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@mr-hope/tsconfig": "workspace:*"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

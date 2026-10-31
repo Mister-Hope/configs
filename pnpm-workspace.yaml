@@ -1,0 +1,28 @@
+packages:
+  - packages/*
+
+virtualStoreType: global
+
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true
+
+packageExtensions:
+  "@lerna-lite/version":
+    peerDependencies:
+      conventional-changelog-conventionalcommits: ^10.4.0
+
+minimumReleaseAgeExclude:
+  - "@mr-hope/*"
+  - "@oxfmt/*"
+  - "@oxlint/*"
+  - "@oxlint-tsgolint/*"
+  - oxfmt
+  - oxlint
+  - oxlint-tsgolint
+  - tsdown
+  - eslint@10.14.0
+minimumReleaseAgeExcludePrune: true
+trustPolicy: no-downgrade
+trustPolicyExcludePrune: true
+trustPolicyIgnoreAfter: 720

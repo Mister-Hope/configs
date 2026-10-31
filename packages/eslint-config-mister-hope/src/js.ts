@@ -1,0 +1,44 @@
+import jsConfig from "@eslint/js";
+
+import type { Config, Rules } from "./helpers.js";
+import { defineConfig } from "./helpers.js";
+
+export const js = (overrides?: Rules): Config[] =>
+  defineConfig(
+    jsConfig.configs.recommended,
+    {
+      name: "hope/js/rules",
+      rules: {
+        curly: ["error", "multi-line", "consistent"],
+        "no-console": "warn",
+        "no-duplicate-imports": "off",
+        "no-unmodified-loop-condition": "error",
+        "padding-line-between-statements": [
+          "error",
+          {
+            blankLine: "always",
+            prev: ["const", "let"],
+            next: ["*"],
+          },
+          {
+            blankLine: "any",
+            prev: ["const", "let"],
+            next: ["const", "let"],
+          },
+          {
+            blankLine: "always",
+            prev: ["*"],
+            next: ["return"],
+          },
+        ],
+        ...overrides,
+      },
+    },
+    {
+      name: "hope/js/script-rules",
+      files: ["**/scripts/**"],
+      rules: {
+        "no-console": "off",
+      },
+    },
+  );
