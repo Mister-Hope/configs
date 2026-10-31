@@ -1,6 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", ":prHourlyLimitNone", ":prConcurrentLimitNone"],
+  "extends": [
+    "config:recommended",
+    ":prHourlyLimitNone",
+    ":prConcurrentLimitNone",
+    "helpers:disableTypesNodeMajor"
+  ],
   "dependencyDashboard": true,
   "schedule": ["every weekend"],
   "packageRules": [
@@ -15,6 +20,12 @@
       "automerge": false,
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["major"]
+    },
+    {
+      "description": "typescript-eslint only supports TypeScript <6.1, so the eslint preset stays on TypeScript 6 until type-eslint supports the next major.",
+      "matchDepNames": ["typescript"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
     }
   ],
   "lockFileMaintenance": {
