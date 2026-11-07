@@ -53,7 +53,7 @@
     "jiti": "2.7.0",
     "nano-staged": "1.0.2",
     "npm-check-updates": "23.1.1",
-    "oxfmt": "0.76.0",
+    "oxfmt": "0.77.0",
     "oxlint": "1.90.0",
     "oxlint-tsgolint": "7.0.2006",
     "publint": "0.3.25",
