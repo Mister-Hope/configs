@@ -41,8 +41,8 @@
     "type-check": "tsc --noEmit && pnpm -r run type-check"
   },
   "devDependencies": {
-    "@lerna-lite/cli": "5.6.4",
-    "@lerna-lite/publish": "5.6.4",
+    "@lerna-lite/cli": "5.7.0",
+    "@lerna-lite/publish": "5.7.0",
     "@mr-hope/tsconfig": "workspace:*",
     "@mr-hope/verify-commit-message": "workspace:*",
     "@types/node": "24.19.2",
