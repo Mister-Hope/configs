@@ -1,3 +1,13 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.11.2](https://github.com/Mister-Hope/configs/compare/eslint-config-mister-hope%400.11.1...eslint-config-mister-hope%400.11.2) (2026-11-13)
+
+### Miscellaneous Chores
+
+- **deps:** upgrade dependencies to latest ([2744d13](https://github.com/Mister-Hope/configs/commit/2744d13c0b484b286349833cf357e333cc371d37))
+
 ## [0.11.1](https://github.com/Mister-Hope/eslint-config-mister-hope/compare/v0.11.0...v0.11.1) (2026-04-03)
 
 ## [0.11.0](https://github.com/Mister-Hope/eslint-config-mister-hope/compare/v0.10.0...v0.11.0) (2026-03-16)
