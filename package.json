@@ -41,11 +41,11 @@
     "type-check": "tsc --noEmit && pnpm -r run type-check"
   },
   "devDependencies": {
-    "@lerna-lite/cli": "5.7.0",
-    "@lerna-lite/publish": "5.7.0",
+    "@lerna-lite/cli": "5.8.0",
+    "@lerna-lite/publish": "5.8.0",
     "@mr-hope/tsconfig": "workspace:*",
     "@mr-hope/verify-commit-message": "workspace:*",
-    "@types/node": "24.19.2",
+    "@types/node": "22.20.5",
     "@vitest/coverage-istanbul": "5.1.0",
     "conventional-changelog-conventionalcommits": "10.4.1",
     "eslint": "10.14.0",
@@ -53,12 +53,12 @@
     "jiti": "2.7.0",
     "nano-staged": "1.0.2",
     "npm-check-updates": "23.1.1",
-    "oxfmt": "0.77.0",
-    "oxlint": "1.92.0",
-    "oxlint-tsgolint": "7.0.2006",
+    "oxfmt": "0.78.0",
+    "oxlint": "1.93.0",
+    "oxlint-tsgolint": "7.0.2007",
     "publint": "0.3.25",
     "rimraf": "6.1.4",
-    "stylelint": "17.16.0",
+    "stylelint": "18.0.0",
     "tsdown": "0.23.7",
     "typescript": "7.0.2",
     "unrun": "0.3.1",
@@ -81,6 +81,6 @@
     }
   },
   "engines": {
-    "node": ">=22"
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
   }
 }
